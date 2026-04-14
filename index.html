@@ -24,8 +24,20 @@
       </div>
 
       <div class="playlist-box">
-        <h3>Paste M3U playlist</h3>
-        <textarea id="m3uInput" placeholder="Paste your M3U content here..."></textarea>
+        <h3>Load Playlist</h3>
+
+        <input
+          id="m3uUrl"
+          type="text"
+          placeholder="Paste M3U URL here..."
+          style="width: 100%; padding: 10px; margin-bottom: 10px; border: none; border-radius: 8px;"
+        />
+
+        <textarea
+          id="m3uInput"
+          placeholder="OR paste M3U content here..."
+        ></textarea>
+
         <button id="loadBtn">Load Playlist</button>
       </div>
     </main>
