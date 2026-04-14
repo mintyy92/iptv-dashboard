@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Private IPTV Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <h1>Channels</h1>
+      <input id="search" type="text" placeholder="Search channels..." />
+      <div id="channelList" class="channel-list"></div>
+    </aside>
+
+    <main class="player-area">
+      <div class="topbar">
+        <h2 id="nowPlaying">Select a channel</h2>
+      </div>
+
+      <div class="video-wrap">
+        <video id="video" controls autoplay playsinline></video>
+      </div>
+
+      <div class="playlist-box">
+        <h3>Paste M3U playlist</h3>
+        <textarea id="m3uInput" placeholder="Paste your M3U content here..."></textarea>
+        <button id="loadBtn">Load Playlist</button>
+      </div>
+    </main>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@1"></script>
+  <script src="app.js"></script>
+</body>
+</html>
